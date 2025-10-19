@@ -1,0 +1,69 @@
+git clone https://github.com/yourusername/25174600087_Nguyen_Huy_Hoang_Gia_bai_tapp.git
+cd 25174600087_Nguyen_Huy_Hoang_Gia_bai_tapp
+git add readme.md
+git commit -m "Initial commit - Updated readme"
+git push origin main
+git checkout main
+git checkout -b branch_1
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add .
+git commit -m "Add text_branch_1.txt"
+git push origin branch_1
+git checkout main
+git checkout -b branch_2
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add .
+git commit -m "Add text_branch_2.txt"
+git push origin branch_2
+git checkout main
+git checkout -b branch_3
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add .
+git commit -m "Add text_branch_3.txt"
+git push origin branch_3
+git checkout main
+git checkout -b branch_4
+echo "Cras ac mi nec nisi porta ultrices sed non ante." >> text_branch_4.txt
+git add .
+git commit -m "Add text_branch_4.txt"
+git push origin branch_4
+git checkout main
+git branch -d branch_4
+git branch --list
+git branch -r
+git pull
+git checkout main
+mkdir main_folder
+touch main_txt_1.txt 
+touch main_txt_2.txt 
+touch main_txt_3.txt
+git add .
+git commit -m "Add main_folder and text files"
+git push origin main
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+git checkout branch_1
+git checkout -b branch_5
+git add text_branch_1.txt
+git commit -m "Update text_branch_1.txt in branch_5 for conflict resolution"
+git push origin branch_5
+git checkout branch_1
+git pull origin branch_1
+git branch -D branch_5 
+git push origin --delete branch_5
+git checkout main
+git pull origin main
+git branch -d branch_2
+git push origin --delete branch_2
+git branch -d branch_3
+git push origin --delete branch_3
+git branch -d branch_4
+git push origin --delete branch_
+git checkout branch_1
+git merge main
+git push origin branch_1
+touch Nguyen_Huy_Hoang_Gia_doan_ma.txt
+git add Nguyen_Huy_Hoang_Gia_doan_ma.txt
+git commit -m "Bài 10: Hoàn thành file tổng hợp các câu lệnh (doan_ma)"
+git push origin main
